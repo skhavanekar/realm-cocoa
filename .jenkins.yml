@@ -10,10 +10,10 @@ target:
   - ios-dynamic
   # - ios-swift
   # - osx-swift # passing
-  - watchos
+  # - watchos
   # - cocoapods
   # - swiftlint # passing
-  - tvos
+  # - tvos
   - osx-encryption
   # FIXME: Re-enable device tests when they can be made to run reliably
   # - ios-device-objc

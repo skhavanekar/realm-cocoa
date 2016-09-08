@@ -4,35 +4,35 @@
 swift_version:
   - 3.0
 target:
-  # - osx # passing
-  # - docs # passing
-  # - ios-static # passing
-  # - ios-dynamic # passing
-  # - ios-swift # passing
-  # - osx-swift # passing
-  # - watchos # passing
+  - osx
+  - docs
+  - ios-static
+  - ios-dynamic
+  - ios-swift
+  - osx-swift
+  - watchos
   - cocoapods
-  # - swiftlint # passing
-  # - tvos # passing
-  # - osx-encryption # passing
+  - swiftlint
+  - tvos
+  - osx-encryption
   # FIXME: Re-enable device tests when they can be made to run reliably
   # - ios-device-objc
   # - ios-device-swift
   # - tvos-device
 configuration:
-  # - Debug
+  - Debug
   - Release
 
-# exclude:
-#   - target: ios-device-objc
-#     configuration: Debug
-#   - target: ios-device-swift
-#     configuration: Debug
-#   - target: docs
-#     configuration: Debug
-#   - target: cocoapods
-#     configuration: Debug
-#   - target: swiftlint
-#     configuration: Debug
-#   - target: tvos-device
-#     configuration: Debug
+exclude:
+  - target: ios-device-objc
+    configuration: Debug
+  - target: ios-device-swift
+    configuration: Debug
+  - target: docs
+    configuration: Debug
+  - target: cocoapods
+    configuration: Debug
+  - target: swiftlint
+    configuration: Debug
+  - target: tvos-device
+    configuration: Debug

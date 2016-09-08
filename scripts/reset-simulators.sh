@@ -50,5 +50,3 @@ done
         fi
     done
 )
-
-open "${DEVELOPER_DIR}/Applications/Simulator.app"

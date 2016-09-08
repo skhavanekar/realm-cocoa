@@ -5,16 +5,16 @@ swift_version:
   - 3.0
 target:
   # - osx # passing
-  - docs
-  # - ios-static
-  # - ios-dynamic
+  # - docs # passing
+  - ios-static
+  - ios-dynamic
   # - ios-swift
   # - osx-swift # passing
-  # - watchos
+  - watchos
   # - cocoapods
-  - swiftlint
-  # - tvos
-  # - osx-encryption
+  # - swiftlint # passing
+  - tvos
+  - osx-encryption
   # FIXME: Re-enable device tests when they can be made to run reliably
   # - ios-device-objc
   # - ios-device-swift

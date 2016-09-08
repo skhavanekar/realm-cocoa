@@ -9,7 +9,7 @@ while pgrep -q Simulator; do
     pkill Simulator 2>/dev/null || true
     # CoreSimulatorService doesn't exit when sent SIGTERM
     pkill -9 Simulator 2>/dev/null || true
-  done
+done
 
 # Shut down simulators until there's no booted ones left
 # Only do one at a time because devices sometimes show up multiple times
@@ -39,7 +39,7 @@ done
             device="${BASH_REMATCH[1]}"
             guid="${BASH_REMATCH[2]}"
 
-            # Delete the simulator if it's a duplicate of the last seen one
+            # Delete the simulator if it's a duplicate of the last one seen
             # Otherwise delete all contents and settings for it
             if [[ $device == $previous_device ]]; then
                 xcrun simctl delete $guid
@@ -51,9 +51,4 @@ done
     done
 )
 
-if [[ -a "${DEVELOPER_DIR}/Applications/iOS Simulator.app" ]]; then
-    open "${DEVELOPER_DIR}/Applications/iOS Simulator.app"
-elif [[ -a "${DEVELOPER_DIR}/Applications/Simulator.app" ]]; then
-    open "${DEVELOPER_DIR}/Applications/Simulator.app"
-fi
-
+open "${DEVELOPER_DIR}/Applications/Simulator.app"

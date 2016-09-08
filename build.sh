@@ -608,6 +608,11 @@ case "$COMMAND" in
         cd examples/installation
         sh build.sh test-ios-objc-cocoapods
         sh build.sh test-ios-objc-cocoapods-dynamic
+        if [ "$REALM_SWIFT_VERSION" = "3.0" ]; then # Skip Swift 3 CocoaPods for now.
+            sh build.sh test-osx-objc-cocoapods
+            sh build.sh test-watchos-objc-cocoapods
+            exit 0
+        fi
         sh build.sh test-ios-swift-cocoapods
         sh build.sh test-osx-objc-cocoapods
         sh build.sh test-osx-swift-cocoapods

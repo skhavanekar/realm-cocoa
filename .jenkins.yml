@@ -8,9 +8,9 @@ target:
   # - docs # passing
   # - ios-static # passing
   # - ios-dynamic # passing
-  - ios-swift
+  # - ios-swift # passing
   # - osx-swift # passing
-  - watchos
+  # - watchos # passing
   - cocoapods
   # - swiftlint # passing
   - tvos

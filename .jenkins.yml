@@ -20,19 +20,19 @@ target:
   # - ios-device-swift
   # - tvos-device
 configuration:
-  - Debug
+  # - Debug
   - Release
 
-exclude:
-  - target: ios-device-objc
-    configuration: Debug
-  - target: ios-device-swift
-    configuration: Debug
-  - target: docs
-    configuration: Debug
-  - target: cocoapods
-    configuration: Debug
-  - target: swiftlint
-    configuration: Debug
-  - target: tvos-device
-    configuration: Debug
+# exclude:
+#   - target: ios-device-objc
+#     configuration: Debug
+#   - target: ios-device-swift
+#     configuration: Debug
+#   - target: docs
+#     configuration: Debug
+#   - target: cocoapods
+#     configuration: Debug
+#   - target: swiftlint
+#     configuration: Debug
+#   - target: tvos-device
+#     configuration: Debug

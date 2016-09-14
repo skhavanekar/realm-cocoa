@@ -576,8 +576,6 @@
 		3FAE25581B8CEBBE00D01405 /* object_schema.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = object_schema.hpp; sourceTree = "<group>"; };
 		3FBD05FA1B94E1C3004559CF /* index_set.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = index_set.cpp; sourceTree = "<group>"; };
 		3FBD05FB1B94E1C3004559CF /* index_set.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = index_set.hpp; sourceTree = "<group>"; };
-		3F9863B91D36876B00641C98 /* RLMClassInfo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RLMClassInfo.mm; sourceTree = "<group>"; };
-		3F9863BA1D36876B00641C98 /* RLMClassInfo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RLMClassInfo.hpp; sourceTree = "<group>"; };
 		3FBEF6781C63D66100F6935B /* RLMCollection_Private.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RLMCollection_Private.hpp; sourceTree = "<group>"; };
 		3FBEF6791C63D66100F6935B /* RLMCollection.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RLMCollection.mm; sourceTree = "<group>"; };
 		3FE556421B9A43E5002A1129 /* schema.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = schema.cpp; sourceTree = "<group>"; };
@@ -1968,7 +1966,6 @@
 				E81A1FE11955FE0100FDED82 /* ObjectInterfaceTests.m in Sources */,
 				021A88361AAFB5CD00EEAC84 /* ObjectSchemaTests.m in Sources */,
 				E81A1FE31955FE0100FDED82 /* ObjectTests.m in Sources */,
-				3F13FA701D343DE100201E9B /* PerformanceTests.m in Sources */,
 				02AFB4631A80343600E11938 /* PropertyTests.m in Sources */,
 				E81A1FE51955FE0100FDED82 /* PropertyTypeTest.mm in Sources */,
 				E81A1FE71955FE0100FDED82 /* QueryTests.m in Sources */,
@@ -2192,6 +2189,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D659E6E1BE0398E006515A0 /* Debug.xcconfig */;
 			buildSettings = {
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -2199,6 +2197,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D659E6F1BE0398E006515A0 /* Release.xcconfig */;
 			buildSettings = {
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};

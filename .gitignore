@@ -46,7 +46,6 @@ bin
 # XCode
 *.bak
 xcuserdata/
-project.xcworkspace
 *.xccheckout
 DerivedData
 
